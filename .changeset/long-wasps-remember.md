@@ -1,5 +1,0 @@
----
-"@richarddavenport/web": minor
----
-
-Changes
