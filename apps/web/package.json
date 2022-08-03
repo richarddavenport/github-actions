@@ -1,5 +1,10 @@
 {
-  "name": "web",
+  "name": "@richarddavenport/web",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:richarddavenport/test-githbu-workflows.git",
+    "directory": "apps/web"
+  },
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
