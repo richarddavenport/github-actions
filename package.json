@@ -1,5 +1,9 @@
 {
-  "name": "test-github-workflows",
+  "name": "@richarddavenport/test-github-workflows",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:richarddavenport/test-github-workflows.git"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
