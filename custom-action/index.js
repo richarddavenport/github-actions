@@ -22,7 +22,7 @@ try {
   //     myError += data.toString();
   //   },
   // };
-  // options.cwd = "./lib";
+  options.cwd = "./custom-action";
 
   await _exec("node", ["custom.js", "foo=bar"], options);
 } catch (error) {

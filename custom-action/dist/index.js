@@ -10867,7 +10867,7 @@ try {
   //     myError += data.toString();
   //   },
   // };
-  // options.cwd = "./lib";
+  options.cwd = "./custom-action";
 
   await (0,_actions_exec__WEBPACK_IMPORTED_MODULE_3__.exec)("node", ["custom.js", "foo=bar"], options);
 } catch (error) {
