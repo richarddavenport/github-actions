@@ -22,7 +22,7 @@ try {
   //     myError += data.toString();
   //   },
   // };
-  options.cwd = "./custom-action";
+  options.cwd = "./.github/custom-action";
 
   await _exec("node", ["custom.js", "foo=bar"], options);
 } catch (error) {
