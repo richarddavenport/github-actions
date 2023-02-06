@@ -9,10 +9,10 @@ runs:
   steps:
     - name: view the secrets context
       shell: bash
-      run: echo "${{ inputs.secrets }}"
+      run: echo "${{ inputs.json-secrets }}"
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
     - run: setenv.sh
       env:
-        SECRETS_CONTEXT: ${{ inputs.secrets }}
+        SECRETS_CONTEXT: ${{ inputs.json-secrets }}
       shell: bash
