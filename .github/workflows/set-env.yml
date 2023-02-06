@@ -19,4 +19,4 @@ jobs:
       - name: Set Env"
         uses: ./.github/actions/set-env
         with:
-          secrets: ${{ secrets }}
+          json-secrets: ${{ toJson(secrets) }}
