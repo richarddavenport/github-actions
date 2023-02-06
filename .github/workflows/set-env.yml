@@ -15,7 +15,7 @@ jobs:
       - name: Checkout files
         uses: Bhacaz/checkout-files@v2
         with:
-          files: ${{ github.event.inputs.app_name }}
+          files: .github ${{ github.event.inputs.app_name }}
 
       - name: Set Env"
         uses: ./.github/actions/set-env
