@@ -1,1 +1,1 @@
-echo "$SECRETS_CONTEXT IN THE setenv.sh script!"
+echo "IN THE setenv.sh script!"
