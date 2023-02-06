@@ -1,0 +1,21 @@
+name: Set Env
+
+on:
+  workflow_dispatch:
+    inputs:
+      app_name:
+        description: "Which stack are you deploying?"
+        required: true
+
+jobs:
+  job1:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout files
+        uses: Bhacaz/checkout-files@v2
+        with:
+          files: ${{ github.event.inputs.app_name }}
+
+      - name: Set Env"
+        uses: ./.github/actions/set-env
