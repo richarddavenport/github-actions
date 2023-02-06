@@ -2,7 +2,7 @@ name: "Set Env"
 description: "This action is used to set env. variables from github secrets and variables"
 inputs:
   secrets:
-    description: 'Set this input to toJson(secrets)'
+    description: 'Set this input to secrets'
     required: true
 runs:
   using: "composite"
@@ -14,5 +14,5 @@ runs:
       shell: bash
     - run: setenv.sh
       env:
-        SECRETS_CONTEXT: ${{ inputs.secrets }}
+        SECRETS_CONTEXT: ${{ toJson(inputs.secrets) }}
       shell: bash
